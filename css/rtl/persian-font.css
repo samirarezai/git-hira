@@ -1,0 +1,9 @@
+@font-face {
+    font-family: shabanam;
+    src: url('../../persian-font/Shabnam.eot') format('eot');
+    src: url('../../persian-font/Shabnam.ttf') format('ttf');
+    src: url('../../persian-font/Shabnam.woff') format('woff');
+}
+*{
+    font-family: shabanam,Tahoma;
+}

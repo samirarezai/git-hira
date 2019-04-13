@@ -1,0 +1,150 @@
+.weblog header{
+    min-height: 5vh;
+    padding-bottom: 25px;
+}
+.weblog .first-heading .fa{
+    font-size: .5rem;
+    color: #ff7149;
+}
+.weblog .navigation .nav-item .activation {
+    right: 22px;
+}
+/*==========================capitulary====================*/
+.weblog .capitulary{
+
+}
+.weblog .capitulary .basic{
+    border: 1px solid #f3eded;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.weblog .capitulary .basic button{
+    color: #fff;
+    background-color:#ff7149 ;
+    border-color: #ff7149;
+    padding: .4rem .8rem;
+    font-size: .8rem;
+}
+.weblog .capitulary .basic .dropdown-menu{
+    width: 17%;
+ direction: rtl;
+    background-color: #fff;
+    border: 1px solid #f3eded;
+}
+.weblog .capitulary .basic .dropdown-menu .dropdown-item{
+    padding-right: 5px;
+}
+.weblog .capitulary .basic div.dropdown-menu.show{
+    right: 0;
+}
+.weblog .form-inline{
+    border: 1px solid #f3eded;
+    padding: 5px 0px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.weblog .capitulary .basic .form-control{
+    font-size: .8rem;
+border: 0;
+}
+.weblog .capitulary .basic .form-control:hover,.weblog .capitulary .basic button:hover{
+    border: 0;
+    outline: 0;
+}
+.form-control:focus ,.weblog .capitulary .basic button:focus,.form-control:focus ,.weblog .capitulary .basic button:active{
+border: 0;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #fff;
+    background-color: rgba(255, 113, 73, 0.93);
+}
+/*==============================sidebar=====================*/
+.weblog .content .sidebar{
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.07);
+    padding:20px 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 100%;
+}
+.weblog .content .sidebar:after{
+    content: '';
+    width: 300px;
+    height: 300px;
+   background: linear-gradient(to left, #d6dbff 10%, #d6dbff 30%);
+    position: absolute;
+    opacity: .3;
+    top:-30px;
+    right: -40px;
+    border-radius: 100% 50% 50% 100% / 75% 69% 69% 75%;
+    z-index: -1;
+}
+.weblog .content .sidebar .title{
+    font-size: 1.3rem;
+    color: #3b2a4c;
+    margin: 1rem 0;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.weblog .content .sidebar .caption{
+    font-weight: bold;
+    font-size: .8rem;
+    color: #3b2a4c;
+    font-family: ShabnamBold, tahoma;
+    line-height: 1.8;
+    margin: 0;
+}
+/*==============================sidebar=====================*/
+.weblog .wrapper{
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.07);
+}
+.weblog .wrapper .text{
+    padding: 20px 20px;
+}
+.weblog .wrapper .title{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: #333;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+.weblog .wrapper .caption{
+    font-size: .8rem;
+    line-height: 1.2rem;
+    color:#617c94;
+}
+.weblog .wrapper .weblog-btn{
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #3b2a4c;
+    border: 0;
+    color: #fff;
+    font-size: .88rem;
+}
+.weblog .wrapper .weblog-btn:focus{
+    border: 0;
+    outline: 0;
+}
+@media  screen and (max-width: 768px){
+    .weblog header{
+        padding-bottom: 0px;
+    }
+    .weblog nav{
+        padding-bottom: 25px;
+        padding-top: 0px;
+    }
+
+}
+@media  screen and (max-width: 567px){
+    .weblog .capitulary .basic button{
+        font-size: .7rem;
+    }
+    .weblog .capitulary .basic .form-control{
+        font-size: .7rem;
+    }
+}

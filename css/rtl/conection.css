@@ -1,0 +1,135 @@
+.conection header{
+    min-height: 5vh;
+    padding-bottom: 25px;
+}
+/*===================intro================*/
+.conection .intro{
+    text-align: center;
+}
+.conection .intro .teeny{
+    font-size: .7rem;
+    color: #636363;
+}
+.conection .intro .title{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: #171515;
+}
+.conection .intro .caption{
+    font-size: .8rem;
+    line-height: 1.6rem;
+    color: #353131;
+    margin: 0;
+}
+/*========================form=================*/
+.conection .form{
+    background: rgba(59, 42, 76, 0.98);
+    padding: 20px 70px;
+    text-align: center;
+}
+.conection .form .teeny{
+    font-size: .7rem;
+    color: #fff;
+}
+.conection .form .title{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding-bottom: 10px;
+    color: #fff;
+}
+.conection .form .form-group-inline{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.conection .form input,.conection .form textarea{
+    border-radius: 0;
+}
+.conection .form .form-control:focus{
+    outline:2px solid #ff7149;
+    border: 0;
+    box-shadow: 0 0 0 0 #fff;
+    background-color: #fff;
+}
+.conection .form .btn{
+    background-color: #ff7149;
+    color: #fff;
+    font-size: .8rem;
+    padding: 10px 20px;
+}
+.conection .navigation .nav-item .activation {
+    right: 33px;
+}
+/*========================form=================*/
+.conection .require{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conection .require .skill{
+    font-size: .9rem;
+    line-height: 1rem;
+    margin-top:15px ;
+    margin-bottom: 5px;
+}
+.conection .require .property{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.conection .require .property .case p{
+    margin: 0;
+}
+.conection .require .property .case{
+    font-size: .8rem;
+    color:#353535 ;
+    line-height: 1.9rem;
+    position: relative;
+    padding-right: 12px;
+}
+.conection .require .property .case:before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 2px solid #ff7149;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}
+/*========================map=================*/
+.map-title{
+    color: #3b2a4c;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 100px 0 20px;
+}
+@media  screen and (max-width: 768px) {
+    .conection header {
+        padding-bottom: 0px;
+    }
+
+    .conection nav {
+        padding-bottom: 25px;
+        padding-top: 0px;
+    }
+
+}
+@media  screen and (min-width: 768px){
+    .conection .form .form-group-inline{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .conection .form .form-group-inline .form-group{
+        flex-basis:500px;
+    }
+}
+@media  screen and (max-width: 1010px){
+    .conection .form{
+        padding: 20px 15px;
+    }
+}

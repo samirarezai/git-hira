@@ -1,0 +1,65 @@
+.about header {
+    min-height: 5vh;
+    padding-bottom: 25px;
+}
+.about .navigation .nav-item .activation {
+    right: 26px;
+}
+/*===========================intro====================*/
+.about .intro .caption{
+    font-size: .9rem;
+    line-height: 1.6rem;
+    color: #353131;
+}
+/*============================require========================*/
+.about .require .heading{
+    font-size: .95rem;
+    line-height: 7px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ff7149;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+}
+.about .require .caption{
+    font-size: .9rem;
+    line-height: 1.6rem;
+    color: #353131;
+}
+.about .require .property{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.about .require .property .case p{
+    margin: 0;
+}
+.about .require .property .case{
+    font-size: .8rem;
+    color:#353535 ;
+    line-height: 1.9rem;
+    position: relative;
+    padding-right: 12px;
+}
+.about .require .property .case:before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 2px solid #ff7149;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}
+@media  screen and (max-width: 768px){
+    .about header{
+        padding-bottom: 0px;
+    }
+    .about nav{
+        padding-bottom: 25px;
+        padding-top: 0px;
+    }
+
+}

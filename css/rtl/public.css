@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    text-align: right;
+    background-color: #f9f9f9;
+}
+header{
+    background: url(../../img/bigTopWrapperBG.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    height: auto !important;
+    min-height: 100vh;
+    padding-bottom: 4rem;
+}
+header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../../img/curvature-top.svg) no-repeat 50% 100%;
+    background-size: contain;
+    width: 100%;
+    height: 30px;
+    bottom: -3px;
+    right: 0;
+}
+.first-title{
+    color: #3b2a4c;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.first-caption{
+    margin-top: 10px;
+    margin-bottom: 0;
+    display:block;
+    line-height: 15px;
+    font-size: .75rem;
+    text-align: center;
+    color: #666;
+}
+.first-caption a{
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0;
+    line-height: 15px;
+    font-size: .75rem;
+    display: inline-block;
+    color: #666;
+}
+.first-caption a:hover{
+    color: #222;
+}
+.first-heading{
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.first-heading:after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 2px solid #f36436;
+    border-radius: 30px;
+    position: absolute;
+    top: 60px;
+    right:50%;
+    margin-right: -6px;
+}
+.first-heading:before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 2px solid #f36436;
+    border-radius: 30px;
+    position: absolute;
+    top: 60px;
+    right:50%;
+    margin-right: 6px;
+}
+.subtitle{
+    background-color: #1c1425;
+    height: 50px;
+    color: #3e3e3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 768px){
+    .first-title{
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,251 @@
+
+
+.navigation{
+    opacity: 1;
+    z-index: 1003;
+    left: 0;
+}
+.navigation nav{
+    padding: 25px 2.5rem;
+}
+.navigation .nav-item .activation {
+    position: relative;
+    width: 3px;
+    height:3px;
+background-color:#fff;
+    top: -2px;
+    right: 36px;
+}
+.navigation .nav-item .activation:after{
+    content: '';
+    width: 3px;
+    height: 3px;
+    background-color: #ff7149;
+    position: absolute;
+    top:0px;
+    right: 7px;
+}
+.navigation .nav-item .activation:before{
+    content: '';
+    width: 3px;
+    height: 3px;
+    background-color:  #ff7149;
+    position: absolute;
+    top:0px;
+    right: -7px;
+}
+/*=======================responsive menu==================*/
+.navigation ul,*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.responsive-menu{
+    display: none;
+    width:100%;
+    height: 100vh;
+    background:#3b2a4c;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 1001;
+    font-weight: 300;
+    font-size: .8rem;
+}
+.responsive-menu ul li{
+    margin: 10px 0;
+}
+.responsive-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: .8rem;
+}
+.navigation .navbar-responsive .fa{
+    font-size: 2rem;
+    color: #fff;
+}
+.navigation .navbar-responsive .nav-link .fa{
+    font-size: 1rem;
+}
+/*====================end of responsive menu================*/
+.navigation .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: .8rem;
+    transition: all .3s;
+}
+.navigation .navbar-dark .navbar-nav .nav-link:hover {
+    color: #c6c8ca;
+}
+.navigation .contact{
+    display: flex;
+    color: #fff;
+    background-color: #8865aa;
+    width: 27px;
+    height: 27px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 65px;
+    transition:all .5s;
+    position: relative;
+    margin-right: 55px;
+}
+.navigation .contact a.nav-link i{
+    color: #fff;
+    font-size: 1rem;
+line-height: 2rem;
+    position: relative;
+}
+.navigation .contact a i:after{
+    content: '';
+    font-size: 2rem;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+   top:9px;
+    right:1px;
+    -webkit-animation-name: anime1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: anime1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: all .4s;
+    border-radius: 50%;
+}
+@keyframes anime1 {
+    0% {background-color: #fff;}
+    50%{background-color:  #ff7149;}
+    100% {background-color:  #fff;}
+}
+
+.navigation .contact:after{
+    content: '021-41238';
+    background: transparent;
+    width: 111px;
+    height: 35px;
+    border-radius: 50px;
+    padding-right: 7px;
+    padding-top: 6px;
+    font-size: .9rem;
+    position: absolute;
+    border: 2px solid #8865aa;
+    right: -80px;
+}
+.navigation .dropdown-item,.dropdown-menu{
+    text-align:right ;
+    color: #3b2a4c;
+    background-color:#fff;
+    font-size: .8rem;
+}
+.navigation .dropdown-menu a.dropdown-item:before{
+    display: inline-block;
+    content: "\f104";
+    font-family: 'FontAwesome';
+    vertical-align: middle;
+    color: #ff7149;
+    margin-left: 3px;
+    transition: .3s ease-in-out;
+}
+.navigation .dropdown-item {
+    padding: .25rem .5rem .25rem 1.5rem;
+}
+.navigation .dropdown-item:hover{
+    background-color: #e4e3e3;
+}
+.navigation .dropdown-menu{
+    padding: 0px 0px;
+    border-radius: 0;
+    position: relative;
+}
+.navigation .responsive-menu .dropdown-item{
+    padding: 6px 15px;
+}
+.navigation .responsive-menu .dropdown-item,.dropdown-menu{
+    width: 100%;
+    min-width: 200px;
+    text-align:right ;
+    color:#fff ;
+    background-color:#3b2a4c;
+    font-size: .8rem;
+    border: 0;
+}
+.navigation .responsive-menu ul li:not(:last-child),.navigation .responsive-menu .dropdown-item{
+    border-bottom: 1px solid #4f365d;
+}
+.navigation .responsive-menu .nav-link {
+    padding: .1rem 1rem;
+}
+.navigation .responsive-menu .dropdown-menu{
+  margin-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.navigation .navbar-nav{
+    padding-right:0;
+    display: flex;
+
+}
+.navigation .first-navbar .dropdown-menu:after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: -6px;
+    right: 38px;
+    transform: rotate(135deg);
+z-index: -1;
+}
+.navigation img.logo {
+    height: 45px;
+    width: auto;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .navigation nav{
+        padding-right:0;
+        padding-left:0;
+    }
+    .navigation{
+        font-size: .9rem;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+
+    .navigation img.logo {
+        height: 40px;
+        width: auto;
+    }
+    .navigation .contact{
+        margin-left:-20px;
+    }
+    .slider{
+        padding-top: 50px;
+    }
+}
+@media screen and (min-width: 992px){
+    .navigation{
+        background-color:transparent;
+       padding: 1px 125px;
+        left: 0;
+    }
+}
+.style-navigation{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color:#3b2a4c;
+}
+.style-brand{
+    margin-right: 50%;
+}
+.style-nav{
+padding-bottom: 10px;
+padding-top: 10px;
+}
