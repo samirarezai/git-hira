@@ -1,0 +1,20 @@
+/*=================fonts================*/
+@import url("rtl/persian-font.css");
+/*=================public style================*/
+@import url("rtl/public.css");
+/*=================index style================*/
+@import url("rtl/slider.css");
+@import url("rtl/navigation.css");
+@import url("rtl/product.css");
+@import url("rtl/overlay.css");
+@import url("rtl/counter.css");
+@import url("rtl/links.css");
+@import url("rtl/footer.css");
+/*=================other pages style================*/
+@import url("rtl/weblog.css");
+@import url("rtl/employ.css");
+@import url("rtl/about.css");
+@import url("rtl/conection.css");
+
+
+
